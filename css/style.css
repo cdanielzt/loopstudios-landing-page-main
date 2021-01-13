@@ -1,0 +1,68 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%);
+
+    --alata: 'Alata', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;;
+}
+/*Globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /* Globales */
+  body{
+      font-size: 1.5rem;
+      font-family: var(--josefin);
+  }
+  /*Hero*/
+  .hero{
+      background-image: url(../images/desktop/image-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 40rem;
+      
+  }
+  .hero__nav{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+  }
+  .hero__nav__ul{
+    padding: 2rem 2rem;
+  }
+  .hero__nav__item{
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      margin-right: 4rem;
+}
+.hero__nav__item:last-of-type{
+    margin-left: 0;
+}
+.hero__logo__container{
+    color: var(--white);
+    font-size: 2.5rem;
+    
+}
+.hero__titulo{
+    color: var(--white);
+    font-family:  var(--alata);
+}
+
+/*Atribucion*/
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
