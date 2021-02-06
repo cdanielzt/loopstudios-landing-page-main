@@ -28,9 +28,6 @@ html {
   a{
       text-decoration: none;
   }
-  h1{
-      font-size: 4rem;
-  }
   .container{
          max-width: min(90%,120rem);
          margin: 0 auto;
@@ -48,7 +45,6 @@ html {
       background-size: cover;
       background-position: center center;
       height: 60rem;
-      
   }
   .barra{
       padding-top: 4rem;
@@ -97,15 +93,49 @@ html {
         display: none;
     }
 }
+/*Slogan*/
+.header__slogan{
+    margin-top: 15rem;
+    display: flex;
+    color: var(--white);
+    border: white 2px solid;
+    width: 100%;
+}
+.header__slogan__text{
+    text-transform: uppercase;
+    font-family: var(--josefin);
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 2.5rem;
+}
 
 /*Section main*/
 .information{
-    margin: 5rem auto;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
 }
 .information__image{
-    width: 50rem;
+    background-image: url("../images/desktop/image-interactive.jpg");
+    height: 20.3rem;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+}
+.information__text{
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--alata);
+    color: var(--darkGray);
+}
+.information__text h2{
+    font-family: var(--josefin);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: normal;
+    color: var(--black);
 }
 
 
