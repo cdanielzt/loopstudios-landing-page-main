@@ -49,15 +49,15 @@ html {
   }
   .barra{
       padding-top: 4rem;
+      display: flex;
+      justify-content: space-between;
   }
 @media (min-width: 768px){
     .barra{
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 }
-
 .logo{
   color: var(--white);
 }
@@ -65,6 +65,34 @@ html {
     font-weight: bold;
 }
 
+.navegacion{
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .navegacion{
+        display: flex;
+    }
+}
+.navegacion__enlace{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+.navegacion__enlace:last-of-type{
+    margin-right: 0;
+}
+
+/*Menu-Hamburguesa*/
+.mobile-menu{
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 480px) {
+    .mobile-menu{
+        display: none;
+    }
+}
 
 /*Section main*/
 .information{
