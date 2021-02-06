@@ -28,6 +28,9 @@ html {
   a{
       text-decoration: none;
   }
+  h1{
+      font-size: 4rem;
+  }
   .container{
          max-width: min(90%,120rem);
          margin: 0 auto;
@@ -72,6 +75,7 @@ html {
 @media (min-width: 480px) {
     .navegacion{
         display: flex;
+        align-items: center;
     }
 }
 .navegacion__enlace{
