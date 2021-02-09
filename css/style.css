@@ -24,6 +24,7 @@ html {
   }
   img{
       max-width: 90%;
+      height: auto;
   }
   a{
       text-decoration: none;
@@ -114,14 +115,35 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 5rem;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .information{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);;
+        justify-items: center;
+    }
 }
 .information__image{
-    background-image: url("../images/desktop/image-interactive.jpg");
-    height: 20.3rem;
-    width: 90%;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    text-align: center;
+
+}
+.information__image img{
+    vertical-align: middle;
+}
+@media (min-width: 768px) {
+    .information__image{
+        height: 50rem;
+        grid-column: 1/span 4;
+        object-fit: contain;
+    }
+
 }
 .information__text{
     width: 90%;
@@ -129,15 +151,30 @@ html {
     text-align: center;
     font-family: var(--alata);
     color: var(--darkGray);
+    background-color: var(--white);
+}
+@media (min-width: 768px) {
+    .information__text{
+        grid-column: 4/span 2;
+        grid-row: 2/span 3;
+        height: 35rem;
+    }
 }
 .information__text h2{
     font-family: var(--josefin);
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
     color: var(--black);
     margin-top: 3rem;
 }
+@media (min-width: 768px) {
+    .information__text h2{
+        font-size: 4rem;
+    }
+
+}
+
 
 
 /*Atribucion*/
