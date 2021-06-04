@@ -359,6 +359,11 @@ footer{
 
 }
 
+.footer__enlace{
+    color: white;
+    padding-top: 2rem;
+}
+
 .footer-grid{
     padding-top: 4rem;
     padding-bottom: 2rem;
@@ -372,7 +377,7 @@ footer{
 @media (min-width: 480px) {
     footer{
         background-color: black;
-        height: 19rem;
+        height: 100%;
     
     }
     .footer-grid{
@@ -388,7 +393,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+
 }
 
 .footer-navegacion{
@@ -396,7 +401,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;
 }
 @media (min-width: 480px) {
     .footer-navegacion{
@@ -413,14 +417,16 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    padding-bottom: 2rem;
 }
 .social-nav{
     display: flex;
+    padding-top: 2rem;
     gap: 1rem;
 }
 .social-nav a img{
     width: 3rem;
+    margin-left: 2rem;
 }
 @media (min-width: 480px) {
     .footer-right{
@@ -433,13 +439,11 @@ footer{
     }
 }
 
-
-
 .footer-text{
     color:gray;
     font-weight: 900;
     font-size: 1.6rem;
-    margin: 0;
+    margin-top: 2rem;
 }
 
 
@@ -449,7 +453,8 @@ footer{
     font-size: 1.5rem;
     text-align: center;
     color: white;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
  
   }
 
