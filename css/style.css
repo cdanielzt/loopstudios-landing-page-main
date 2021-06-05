@@ -358,6 +358,45 @@ html {
     min-width: 80%;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+/* Opacity #1 */
+.card{
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+/* .card:hover img {
+	opacity: 0.3;
+    z-index: 1;
+    color: black;
+}
+.card:hover .card-textWrapper .card-title{
+    color: black;
+} */
+.overlay{
+    background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  opacity: 0;
+  z-index: 1;
+}
+.overlay:hover{
+    opacity: 1;
+  }
+.card:hover .card-title{
+    position: relative;
+    color: black;
+    z-index: 2;
 }
 
     @media (min-width: 768px) {
@@ -424,6 +463,7 @@ footer{
 .footer__enlace{
     color: white;
     padding-top: 2rem;
+    padding-right: 2rem;
 }
 
 .footer-grid{
