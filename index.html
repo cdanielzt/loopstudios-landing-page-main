@@ -29,8 +29,32 @@
           <a class="logo" href="index.html">
             <img src="images/logo.svg" alt="Logo de loopstudios" />
           </a>
+
           <div class="mobile-menu">
-            <img src="images/icon-hamburger.svg" alt="icono menu responsive" />
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+             <!-- El logo-->
+            <a class="overlay-logo" href="index.html">
+              <img src="images/logo.svg" alt="Logo de loopstudios" />
+            </a>
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a>
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Events</a>
+                <a href="#">Products</a>
+                <a href="#">Support</a>
+              </div>
+            </div>
+            <img
+            onclick="openNav()"
+            src="images/icon-hamburger.svg"
+            alt="icono menu responsive"
+          />
           </div>
           <nav class="navegacion">
             <a class="navegacion__enlace" href="">About</a>
@@ -217,5 +241,6 @@
         >. Coded by <a href="#">Carlos Zapata</a>.
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
