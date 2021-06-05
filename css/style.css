@@ -7,7 +7,7 @@
     --alata: 'Alata', sans-serif;
     --josefin: 'Josefin Sans', sans-serif;;
 }
-/*Globales*/
+/*Globals*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -15,7 +15,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  /* Globales */
+  /* Globals */
   body{
       font-size: 16px;
       font-family: var(--josefin);
@@ -111,20 +111,18 @@ html {
     }
 }
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
+    position: fixed; 
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay */
   }
   
-  /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
     top: 20%; /* 25% from the top */
@@ -150,7 +148,6 @@ html {
     transition: 0.3s; /* Transition effects on hover (color) */
   }
   
-  /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
@@ -163,7 +160,7 @@ html {
     font-size: 60px;
   }
   
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again*/
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -367,14 +364,7 @@ html {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-/* .card:hover img {
-	opacity: 0.3;
-    z-index: 1;
-    color: black;
-}
-.card:hover .card-textWrapper .card-title{
-    color: black;
-} */
+
 .overlay-card{
     background: rgba(255, 255, 255, 0.6);
   position: absolute;
