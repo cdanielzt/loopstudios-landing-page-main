@@ -356,14 +356,13 @@ html {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
     cursor: pointer;
-}
 
-/* Opacity #1 */
-.card{
-	opacity: 1;
+    opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+
 }
+
 
 .overlay-card{
     background: rgba(255, 255, 255, 0.6);
@@ -380,7 +379,7 @@ html {
   opacity: 0;
   z-index: 1;
 }
-.overlay-card:hover{
+.card:hover .overlay-card{
     opacity: 1;
   }
 .card:hover .card-title{
@@ -449,7 +448,6 @@ html {
 
 footer{
     background-color: black;
-    /* height: 19rem; */
 
 }
 
