@@ -375,7 +375,7 @@ html {
 .card:hover .card-textWrapper .card-title{
     color: black;
 } */
-.overlay{
+.overlay-card{
     background: rgba(255, 255, 255, 0.6);
   position: absolute;
   height: 100%;
@@ -390,7 +390,7 @@ html {
   opacity: 0;
   z-index: 1;
 }
-.overlay:hover{
+.overlay-card:hover{
     opacity: 1;
   }
 .card:hover .card-title{
